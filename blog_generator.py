@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get API key from environment variable
-HUGGING_FACE_API_KEY = st.secrets("HUGGING_FACE_API_KEY")
+HUGGING_FACE_API_KEY = os.getenv("HUGGING_FACE_API_KEY")
 
 st.title("AI Blog Generator")
 st.write("Generate high-quality blog content with AI")
